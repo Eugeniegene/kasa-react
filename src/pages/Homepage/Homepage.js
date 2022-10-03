@@ -6,17 +6,12 @@ import LocationDisplay from "../../components/locationDisplay/locationDisplay"
 import locationList  from "../../data/hotels.json"
 import LocationThumbnail from "../../components/locationThumbnail/locationThumbnail"
 
-async function getLocationDisplay() {
-  const response = await fetch('../../data/hotels.json')
-  const { locationList } = await response.json()
-  return locationList
-}
 
 const Homepage = () => {//adds up the homepage component 
     //getLocationDisplay()
     console.log(locationList)
     return (
-      <article className="main-bloc">
+      <section className="main-bloc">
         <MainImage imgSource="../../IMG.png"/>
         <div className='allLocations'>
             <div className="locationBloc">
@@ -29,7 +24,7 @@ const Homepage = () => {//adds up the homepage component
           />))}
           </div>
         </div>
-      </article>
+      </section>
     )
   }
 export default Homepage
