@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 import "./footer.css"
-import kasaLogoWhite from "../../white_logo_footer.png"
+import kasaLogoWhite from "../../assets/white_logo_footer.png"
 
 const Footer = () => {//creates a footer frame
       return (

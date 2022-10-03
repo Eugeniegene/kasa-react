@@ -2,7 +2,7 @@ import React from "react"
 import { NavLink, Link } from "react-router-dom"
 
 import "./header.css"
-import kasaLogo from "../../logo.png"
+import kasaLogo from "../../assets/logo.png"
 
 const Header = () => {
       return (
@@ -25,7 +25,7 @@ const Header = () => {
             <li>
               <NavLink
                 className="headerLink"
-                to="/about"
+                to="about"
               >
                 &Agrave; propos
               </NavLink>

@@ -7,12 +7,13 @@
   overflow-x: hidden;
 }
 header {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+  max-width: 1500px;
 }
 
 .main-nav ul {
@@ -52,6 +53,7 @@ header {
   .main-nav li a {
     margin: 0 0 0 7px;
     font-size: 17px;
+    text-transform: uppercase;
   }
   .header-link {
     font-size: 12px;
@@ -89,5 +91,6 @@ header {
   .main-nav li a {
     margin: 0 0 0 15px;
     font-size: 20px;
+    text-transform: uppercase;
   }
 }
