@@ -1,7 +1,7 @@
 import React from "react"
 
 import "./about-main-image.css"
-import AboutbannerImage from "../../about-background.png"
+import AboutbannerImage from "../../assets/about-background.png"
 
 const MainImageBanner = () => {//adds up the image component 
     return (
