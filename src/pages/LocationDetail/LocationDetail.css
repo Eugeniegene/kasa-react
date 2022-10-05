@@ -1,6 +1,8 @@
 .location
 {
-    padding: 75px;
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
     margin-left: 10px;
     max-width: 1620px;
     margin:0 auto;
@@ -42,16 +44,27 @@
     gap : 25px;
     font-weight: 500;
     font-size: 18px;
+} 
 
+.equip-dropdowns .collapse-item .content-display p {
+    padding-left: 10px;
+    padding-top: 30px;
 }
 .equip-dropdowns .collapse-item .content-display{
     width: 90%;
     gap : 25px;
     font-weight: 400;
     font-size: 18px;
+    padding-left: 0;
+    padding-top: 1px;
+    padding-bottom: 5px;
 }
-.equip-dropdowns .collapse-item .content-display .tools{
-    display: flex;
+
+
+.equip-dropdowns .collapse-item .content-display ul {
+    list-style-type: none;
+    padding-top: 0;
+    padding-left: 10px;
 }
 
 .locationLandlord
@@ -68,10 +81,12 @@
 
 .location h3
 {
-    width: 15%;
+    width: 100%;
     font-size: 18px;
     font-weight: 500;
     color: #FF6060;
+    text-align: end;
+    padding-right: 10px;
 }
 .locationLandlord .landlordPicture
 {
@@ -102,6 +117,7 @@
     .location{
         margin: 0 auto;
         padding: 20px;
+        padding-top : 20px
     }
   }
 
@@ -110,6 +126,7 @@
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top : 20px
     }
 
     .locationName

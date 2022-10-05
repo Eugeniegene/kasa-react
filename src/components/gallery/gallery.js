@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
+import "./gallery.css"
+
 const Gallery = ({pictures}) => {//adds up the gallery component 
     const [currentIndex, setCurrentIndex] = useState(0)
     const previousImage = () => {
@@ -16,14 +18,18 @@ const Gallery = ({pictures}) => {//adds up the gallery component
     const currentImage = () =>{
   
     }
+    console.log(pictures)
     return (   
-        <div className="gallery">Hi gallery
-            {pictures?.length}
-            <div onClick={previousImage}>
-                <i class="fa-solid fa-chevron-left"></i>
+        <div className="gallery">
+            <div className="left"onClick={previousImage}>
+                <i class="fa-solid fa-4x fa-chevron-left"></i>
             </div>
-            <div onClick={nextImage}>
-                <i class="fa-solid fa-chevron-right"></i>
+            <img src={pictures[currentIndex]}/>
+            <div class="right" onClick={nextImage}>
+                <i class="fa-solid fa-4x fa-chevron-right"></i>
+            </div>
+            <div className="picture-number">
+              {currentIndex + 1}/{pictures.length}
             </div>
         </div>
     )

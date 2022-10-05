@@ -14,6 +14,7 @@ const LocationDetail = () => {
     const locationSelected = locationList.find((location) => location.id === locationID)
     const { title, location, equipments, description, rating } = locationSelected
 
+    console.log(equipments)
     return (
             <div className="location">
               <Gallery pictures={locationSelected?.pictures}/>
@@ -37,10 +38,14 @@ const LocationDetail = () => {
               </div>
               <div className="equip-dropdowns">
                 <Collapse label="Description" >
-                <p>{description}</p> 
+                  <p>{description}</p> 
                 </Collapse> 
                 <Collapse label="Equipement"> 
-                    <span className='tools'>{equipments}</span> 
+                  <ul>
+                    {equipments.map((equipment) => {
+                      return <li>{equipment}</li>
+                    })}
+                    </ul>
                 </Collapse>
               </div>
             </div>
