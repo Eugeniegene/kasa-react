@@ -1,6 +1,5 @@
 import React from "react"
 
-import "./Homepage.css"
 import MainImage from "../../components/main-image/mainImage"
 import LocationDisplay from "../../components/locationDisplay/locationDisplay"
 import locationList  from "../../data/hotels.json"

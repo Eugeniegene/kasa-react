@@ -24,6 +24,12 @@
     padding-left: 10px;
     color: white;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.gallery .left:hover
+{
+    transform: scale(1.1);
 }
 
 .gallery .right
@@ -37,6 +43,12 @@
     padding-right: 10px;
     color: white;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.gallery .right:hover
+{
+    transform: scale(1.1);
 }
 
 .gallery .picture-number {
@@ -46,6 +58,16 @@
     color: white;
     font-weight:bold;
 }
+
+
+@media screen and (max-width: 600px) {
+    .gallery .left {
+        font-size: 10px;
+    }
+    .gallery .right {
+        font-size: 10px;
+    }
+  }
 
 @media screen and (max-width: 480px) {
     .gallery
@@ -58,5 +80,12 @@
     .gallery .picture-number
     {
         bottom: 10%;
+        left: 45%;
+    }
+    .gallery .left {
+        font-size: 5px;
+    }
+    .gallery .right {
+        font-size: 5px;
     }
   }

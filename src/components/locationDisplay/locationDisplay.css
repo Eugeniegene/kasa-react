@@ -29,7 +29,7 @@
 .allLocations .locationBloc a:hover
 {
     display: flex;
-    transform: scale(1.05);
+    transform: scale(1.02);
 } 
 
 .allLocations .locationBloc a:link

@@ -1,6 +1,5 @@
 import React from "react"
 
-import "./locationThumbnail.css"
 import { Link } from 'react-router-dom'
 import locationList  from "../../data/hotels.json"
 
