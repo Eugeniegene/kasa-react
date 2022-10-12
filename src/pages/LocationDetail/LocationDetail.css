@@ -18,7 +18,7 @@
 
 .locationChecked
 {
-    width: 95%;
+    width: 100%;
 }
 
 .locationPlace
@@ -31,6 +31,7 @@
 
 .equip-dropdowns{
     display: flex;
+    gap : 25px;
 }
 
 .equip-dropdowns .collapse-item{
@@ -40,8 +41,6 @@
 }
 
 .equip-dropdowns .collapse-item .toggle{
-    width: 90%;
-    gap : 25px;
     font-weight: 500;
     font-size: 18px;
 } 

@@ -45,7 +45,6 @@
 .collapse-item .content-display
 {
     height: auto;
-    width: 1023px;
     text-align: left;
     background-color: #F6F6F6;
     font-weight: 400;
@@ -75,11 +74,11 @@
     text-align: justify;
 }
 
-@media screen and (min-width: 300px) and (max-width: 534px) {
+@media screen and (min-width: 300px) and (max-width: 729px) {
 
     .collapse-bloc
     {
-        width: auto;
+        padding: 10px;
     }
 
     .collapse-bloc .collapse-item .toggle
@@ -89,5 +88,6 @@
     .collapse-bloc .collapse-item .content-display
     {
         width: 100%;
+        font-size: 18px;
     }
   }
