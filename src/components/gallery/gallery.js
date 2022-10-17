@@ -15,16 +15,13 @@ const Gallery = ({pictures}) => {//adds up the gallery component
         const newIndex = isLastSlide ? 0 : currentIndex + 1
         setCurrentIndex(newIndex)
       } 
-    const currentImage = () =>{
-  
-    }
     console.log(pictures)
     return (   
         <div className="gallery">
             <div className="left"onClick={previousImage}>
                 <i class="fa-solid fa-4x fa-chevron-left"></i>
             </div>
-            <img src={pictures[currentIndex]}/>
+            <img src={pictures[currentIndex]} alt="location-illustration"/>
             <div class="right" onClick={nextImage}>
                 <i class="fa-solid fa-4x fa-chevron-right"></i>
             </div>
