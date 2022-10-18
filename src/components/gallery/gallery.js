@@ -11,8 +11,8 @@ const Gallery = ({pictures}) => {//adds up the gallery component
         setCurrentIndex(newIndex)
       }  
     const nextImage = () => {
-        const isLastSlide = currentIndex === pictures.length - 1
-        const newIndex = isLastSlide ? 0 : currentIndex + 1
+        const isLastImage = currentIndex === pictures.length - 1
+        const newIndex = isLastImage ? 0 : currentIndex + 1
         setCurrentIndex(newIndex)
       } 
     console.log(pictures)

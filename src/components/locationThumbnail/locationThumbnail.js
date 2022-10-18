@@ -1,13 +1,7 @@
 import React from "react"
 
 import { Link } from 'react-router-dom'
-import locationList  from "../../data/hotels.json"
-
-async function getLocationDisplay() {
-    const response = await fetch('../../data/hotels.json')
-    const { locationList } = await response.json()
-    return locationList
-  }
+import "./locationThumbnail.css"
 
 function LocationThumbnail ({ id, titre, cover }) {//adds up the homepage component 
     return (
