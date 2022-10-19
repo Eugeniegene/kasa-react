@@ -4,7 +4,6 @@ import MainImage from "../../components/main-image/mainImage"
 import locationList  from "../../data/hotels.json"
 import LocationThumbnail from "../../components/locationThumbnail/locationThumbnail"
 
-
 const Homepage = () => {//adds up the homepage component 
     console.log(locationList)
     return (
